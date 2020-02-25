@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "parcel-bundler": "^1.12.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "2.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm run prepare-prod && npm run build-prod",
+    "build-prod": "./node_modules/parcel-bundler/bin/cli.js index.html",
+    "prepare-prod": "parcel build index.html",
+    "build-dev": "parcel index.html"
+  },
+  "engines": {
+    "node": "12.13.1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +25,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlou88/lights-out-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlou88/lights-out-game/issues"
+  },
+  "homepage": "https://github.com/rlou88/lights-out-game#readme",
+  "description": ""
 }
