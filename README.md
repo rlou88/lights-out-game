@@ -20,8 +20,14 @@ Then run the server:
 $ npm run start
 ```
 
-# Technologies Used
+## Technologies Used
 
 - React
 - HTML
 - CSS
+
+## Deployment
+
+Surge
+
+https://finicky-action.surge.sh
